@@ -11,7 +11,7 @@ Dependencies in requirements.txt file
 Docker file created and is present in the repo
 
 **Step 4**
-Command: docker build -t greeting-app .
+**Command**: docker build -t greeting-app .
 Output: [+] Building 204.3s (9/9) FINISHED
  => [internal] load build definition from Dockerfile                                                               0.1s
  => => transferring dockerfile: 239B                                                                               0.0s
@@ -52,10 +52,10 @@ Output: [+] Building 204.3s (9/9) FINISHED
 
 
 **Step 5**
-Command: docker tag greeting-app abdul7235/greeting-app  (for tagging the image)
+**Command**: docker tag greeting-app abdul7235/greeting-app  (for tagging the image)
 
 
-Command: docker login -u abdul7235
+**Command**: docker login -u abdul7235
 Output: Password:
 Login Succeeded
 
@@ -63,7 +63,7 @@ Logging in with your password grants your terminal complete access to your accou
 For better security, log in with a limited-privilege personal access token. Learn more at https://docs.docker.com/go/access-tokens/
 
 
-Command: docker push abdul7235/greeting-app
+**Command**: docker push abdul7235/greeting-app
 
 Output: Sharing the following output since terminal closed after running above command, could not copy logs
 
@@ -91,10 +91,10 @@ https://github.com/abdul7235/devops_assignment1_part1
 Created a README.md file on local repo and pushed it on remote
 
 **Step 8**
-Command: git init
+**Command**: git init
 Output: Initialized empty Git repository in D:/DevOps/devops_assignment1_part1/.git/
 
-Command: git status
+**Command**: git status
 Output: git status
 On branch master
 
@@ -111,19 +111,19 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-Command: git branch -M main
-Command: git status
+**Command**: git branch -M main
+**Command**: git status
 Output: On branch main
 
-Command: git remote add origin https://github.com/abdul7235/devops_assignment1_part1.git
-Command: git remote show origin
+**Command**: git remote add origin https://github.com/abdul7235/devops_assignment1_part1.git
+**Command**: git remote show origin
 Output: * remote origin
   Fetch URL: https://github.com/abdul7235/devops_assignment1_part1.git
   Push  URL: https://github.com/abdul7235/devops_assignment1_part1.git
   HEAD branch: (unknown)
 
-Command: git add .
-Command: git status
+**Command**: git add .
+**Command**: git status
 Output: On branch main
 
 No commits yet
@@ -138,8 +138,8 @@ Changes to be committed:
         new file:   requirements.txt
 
 
-Command: git commit -m "Initial Commit"
-Command: git status
+**Command**: git commit -m "Initial Commit"
+**Command**: git status
 Output: On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -148,4 +148,26 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+**Command**: git push -u origin main
+Output: [main f356660] Second Commit
+ 1 file changed, 8 insertions(+), 8 deletions(-)
 
+D:\DevOps\devops_assignment1_part1>git push -u origin main
+warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------
+warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+warning: ----------------- SECURITY WARNING ----------------
+warning: | TLS certificate verification has been disabled! |
+warning: ---------------------------------------------------
+warning: HTTPS connections may not be secure. See https://aka.ms/gcm/tlsverify for more information.
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (12/12), 3.39 KiB | 1.70 MiB/s, done.
+Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/abdul7235/devops_assignment1_part1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
