@@ -122,30 +122,30 @@ Output: * remote origin
   Push  URL: https://github.com/abdul7235/devops_assignment1_part1.git
   HEAD branch: (unknown)
 
-Command: git add --all :!/.gitignore
+Command: git add .
 Command: git status
-Output: >git status
-On branch main
+Output: On branch main
 
 No commits yet
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
         new file:   Dockerfile
         new file:   README.md
         new file:   app.py
         new file:   models/person_model.py
         new file:   requirements.txt
 
+
+Command: git commit -m "Initial Commit"
+Command: git status
+Output: On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
         modified:   README.md
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
+no changes added to commit (use "git add" and/or "git commit -a")
 
-
-Command: git commit -m "Initial Commit"
 
