@@ -112,10 +112,12 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 **Command**: git branch -M main
+
 **Command**: git status
 Output: On branch main
 
 **Command**: git remote add origin https://github.com/abdul7235/devops_assignment1_part1.git
+
 **Command**: git remote show origin
 Output: * remote origin
   Fetch URL: https://github.com/abdul7235/devops_assignment1_part1.git
@@ -123,6 +125,7 @@ Output: * remote origin
   HEAD branch: (unknown)
 
 **Command**: git add .
+
 **Command**: git status
 Output: On branch main
 
@@ -139,7 +142,9 @@ Changes to be committed:
 
 
 **Command**: git commit -m "Initial Commit"
+
 **Command**: git status
+
 Output: On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
